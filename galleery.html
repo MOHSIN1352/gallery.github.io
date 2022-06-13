@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<title>GALLERY</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          color:red ;
+          background-image: url(https://i.pinimg.com/736x/f9/a2/d9/f9a2d900654254822f7e6367ec5eb7d8.jpg);
+        }
+        
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+        
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+        
+        /* Create four equal columns that sits next to each other */
+        .column {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+        
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+        
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+          .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+
+         .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      
+      .container:hover {
+        transition: .5s ease;
+        opacity: 50%;
+        position: static;
+
+      }
+      
+      .container:hover .image {
+        opacity: 0.3;
+      }
+      
+      .container:hover .middle {
+        opacity: 1;
+      }
+      
+      .text {
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+        </style>
+</head>
+<body>
+    <div class="header">
+        <h1>GALLERY</h1>
+    </div>
+    <div class="row">
+        <div class="column">
+          <div class="container">
+        <img src="https://silveroakuni.ac.in/upload/Celebrity%20at%20SOU/1-(4).jpg" alt="Celebrity at sou"  style="width:100%;">
+       <div class="text"><a href="https://silveroakuni.ac.in/celebrity-gallery">Celebrity at SOU</a></div><br>
+      </div>
+      <div class="container">
+        <img src="https://silveroakuni.ac.in/upload/JUNOON%20-%20Cultural%20Festival/1-(1).jpg" alt="cultural fest"  style="width:100%;">
+        <div class="text">CULTURAL FEST</div>
+      </div><br>
+
+        <div class="container">
+        <img src="https://silveroakuni.ac.in/upload/Independence-Day/1-1.jpg" alt="independence day" style="width:100%;">
+        <div class="text">Independence-Day</div>
+        </div><br>
+  
+        <div class="container">
+        <img src="https://silveroakuni.ac.in/upload/Orientation/1-(1).jpg" alt="orientattion" style="width:100%;">
+        <div class="text">ORIENTATION</div>
+        </div>
+        </div>
+        <div class="column">
+              
+        <div class="container">
+            <img src="https://silveroakuni.ac.in/upload/Other%20Events/1-(1).jpg" alt="other events"style="width:100%;">
+            <div class="text">OTHER EVENTS</div><br>
+          </div>
+            
+            <div class="container">    
+            <img src="https://silveroakuni.ac.in/upload/Prarambh/1-(1).jpg" alt="" style="width:100%;">
+            <div class="text">PRARAMBH</div><br>
+          </div>
+
+            <div class="container">
+            <img src="https://silveroakuni.ac.in/upload/Republic%20Day/1-(1).jpg" style="width: 100%;">
+            <div class="text">REPUBLIC DAY</div><br>
+          </div>
+            
+            <div class="container">
+            <img src="https://silveroakuni.ac.in/upload/Seminars/1-(5).jpg" style="width: 100%;">
+            <div class="text">SEMINARS</div><br>
+          </div>
+        </div>
+        <div class="column">
+
+          <div class="container">
+            <img src="https://silveroakuni.ac.in/upload/RASS%20RASIYA/1-(1).jpg" style="width:100%;">
+            <div class="text">RASS RASIYA</div><br>
+          </div>
+          
+            <div class="container">
+            <img src="https://silveroakuni.ac.in/upload/Sports%20Mania/1-(1).jpg" style="width:100%;">
+            <div class="text">SPORTS EVENT</div><br>
+          </div>
+          
+            <div class="container">
+            <img src="https://silveroakuni.ac.in/upload/Taalash%20-%20Technical%20Fest/1-(1).jpg" style="width:100%;">
+            <div class="text">TECHNICAL FEST</div><br>
+          </div>
+          
+            <div class="container">
+            <img src="https://silveroakuni.ac.in/upload/We%20Care/1-(1).jpg" style="width:100%;">
+            <div class="text">WE CARE</div><br>
+          </div>
+        </div>
+       <div class="column">
+
+        <div class="container">
+           <img src="https://silveroakuni.ac.in/upload/JUNOON%20-%20Cultural%20Festival/1-(6).jpg" style="width:100%;">
+           <div class="text">CULTURALFESTIVAL INSIDE</div><br>
+          </div>
+        
+           <div class="container">
+           <img src="https://silveroakuni.ac.in/upload/JUNOON%20-%20Cultural%20Festival/1-(7).jpg" style="width:100%;">
+           <div class="text">GARBA</div><br>
+          </div>
+        
+           <div class="container">
+           <img src="https://silveroakuni.ac.in/upload/RASS%20RASIYA/1-(17).jpg" style="width:100%;">
+           <div class="text">CELEBRATIONS</div><br>
+          </div>
+        
+           <div class="container">
+           <img src="https://silveroakuni.ac.in/upload/RASS%20RASIYA/1-(23).jpg" style="width:100%;">
+           <div class="text">WINNERS</div><br>
+          </div>
+       </div>
+<br>
+<p style="color:red;"> &copy; rights reserved SOU</p>
+</body>
+</html>
